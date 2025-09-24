@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CS4241 Assignment 3 -- Drawing Ideas List</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Drawing Idea List">
+    <meta name="keywords" content="List, Drawing">
+    <meta name="author" content="Kelsey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    
+    <!-- get rid of favicon error -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div id="showUsername"></div>
+      <div class="button" id="logoutButton">
+        <button type="button" id="logout" class="btn btn-default btn-dark">logout</button>
+      </div>
+
+      <div class="header"><h2 class="text-center"><mark>Fill out the Following and Determine What to Draw!</mark></h2></div>
+
+      <br>
+
+      <div class="sectionOne">
+        <h4 class="text-center text-primary">What do you want to draw? Write your idea in the box below</h4>
+        <br>
+        <form class="text-center">
+          <input type="text" id="idea" value="">
+          <br>
+          <label for="idea">Idea textbox</label>
+        </form>
+        <br>
+      </div>
+
+      <div class="sectionTwo">
+        <h4 class="text-center text-primary">What's the drawing for? Select an option in the dropbox</h4>
+        <br>
+        <form class="text-center">
+          <select name="reason" id="reason">
+          <label for="reason">Reason</label>
+            <option value="class">For Class</option>
+            <label for="class">For Class</label>
+            <option value="portfolio">For my Portfolio</option>
+            <label for="portfolio">For my Portfolio</label>
+            <option value="personal">For Myself</option>
+            <label for="personal">For Myself</label>
+          </select>
+        </form>
+        <br>
+      </div>
+
+      <div class="sectionThree">
+        <h4 class="text-center text-primary">How much do you want to draw it? Select an option in the dropbox</h4>
+        <br>
+        <form class="text-center">
+          <select name="desire" id="desire">
+            <label for="desire">Desire</label>
+            <option value="small">Don't Really Want To</option>
+            <label for="small">Don't Really Want To</label>
+            <option value="medium">I'm Willing</option>
+            <label for="medium">I'm Willing'</label>
+            <option value="large">Really Want To</option>
+            <label for="large">Really Want To</label>
+          </select>
+        </form>
+        <br>
+      </div>
+
+      <div class="button d-grid" id="submitButton">
+        <br><br>
+        <button type="button" id="submit" class="btn btn-dark">Add to List</button>
+      </div>
+    
+      <div class="sectionFour" id="results">
+        <br>
+        <table class="table table-bordered text-center bg-light">
+          <tr>
+            <th id="tableIdea">Idea</th>
+            <th id="tableReason">Reason</th>
+            <th id="tableDesire">Desire</th>
+            <th id="tablePriority">Priority</th>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </body>
+</html>
